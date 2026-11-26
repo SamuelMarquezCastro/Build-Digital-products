@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #111827;
+  color: #f9fafb;
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr;
+  padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 600;
+}
+
+#scene {
+  min-height: 320px;
+  height: min(72vh, 720px);
+}
+
+#scene canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
